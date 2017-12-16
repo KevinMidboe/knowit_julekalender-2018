@@ -3,10 +3,11 @@
 # @Author: KevinMidboe
 # @Date:   2017-12-04 16:40:56
 # @Last Modified by:   KevinMidboe
-# @Last Modified time: 2017-12-04 20:20:28
+# @Last Modified time: 2017-12-16 14:09:31
+import os
 
 def get_wordlist():
-	with open('./ordliste.txt', 'r') as wordlist:
+	with open(os.path.dirname(__file__) + '/ordliste.txt', 'r') as wordlist:
 		read_data = wordlist.read().splitlines()
 	wordlist.close()
 	return read_data
@@ -43,6 +44,7 @@ def main():
 			matches.append(word)
 			
 	print(matches, len(matches))
+	return len(matches)
 
 if __name__ == '__main__':
 	main()
