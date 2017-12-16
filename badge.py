@@ -12,18 +12,25 @@ def get_xml_test_results():
    total = int(root.attrib['tests'])
    return [failures, total]
 
+def buildURL(subject, value, color):
+   print('https://img.shields.io/badge/{}-{}-{}.svg'.format(subject, value, color))
+   return 'https://img.shields.io/badge/{}-{}-{}.svg'.format(subject, value, color)
+
 def getPicture():
    with open("progress.svg", "rb") as imageFile:
       return imageFile.read()
 
-def download_image(image_url):
+def downloadImage(image_url):
    session = requests.Session()
    session.headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36"}
+   localFilename = image_url.split('/')[-1].split("?")[0].split('-')[0].lower() + '.svg'
 
    r = session.get(image_url, stream=True, verify=False)
-   with open('progress.svg', 'wb') as f:
+   with open(localFilename, 'wb') as f:
       for chunk in r.iter_content(chunk_size=1024):
          f.write(chunk)
+
+   return localFilename
 
 def getColor(value):
    start = Color('red')
@@ -49,13 +56,14 @@ def uploadToDropbox(progress):
 def main():
    failures, total = get_xml_test_results()
    progress = "{0:.1f}".format((total-failures)/total * 100)
+   completed = str(total-failures) + '/' + str(total)
    color = getColor(progress)
 
-   path = 'https://img.shields.io/badge/Progress-{}-{}.svg'.format(progress, color)
-   download_image(path)
+   image1 = downloadImage(buildURL('Progress', progress + '%25', color))
+   image2 = downloadImage(buildURL('Completed', completed, color))
 
-   print(progress)
-   uploadToDropbox(progress)
+   uploadToDropbox(image1)
+   uploadToDropbox(image2)
 
 if __name__ == '__main__':
    main()
