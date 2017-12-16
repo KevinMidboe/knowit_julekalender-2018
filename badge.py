@@ -16,8 +16,8 @@ def buildURL(subject, value, color):
    print('https://img.shields.io/badge/{}-{}-{}.svg'.format(subject, value, color))
    return 'https://img.shields.io/badge/{}-{}-{}.svg'.format(subject, value, color)
 
-def getPicture():
-   with open("progress.svg", "rb") as imageFile:
+def getPicture(path):
+   with open(path, "rb") as imageFile:
       return imageFile.read()
 
 def downloadImage(image_url):
@@ -48,10 +48,9 @@ def getColor(value):
    
    return hexList[int(float(value)/10)]
 
-def uploadToDropbox(progress):
+def uploadToDropbox(path):
    dbx = dropbox.Dropbox(os.environ.get('DROPBOX_ACCESS_TOKEN'))
-
-   response = dbx.files_upload(getPicture(), '/knowit/progress.svg', mode=WriteMode('overwrite', None))
+   response = dbx.files_upload(getPicture(path), '/knowit/' + path, mode=WriteMode('overwrite', None))
 
 def main():
    failures, total = get_xml_test_results()
