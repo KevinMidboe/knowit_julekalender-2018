@@ -21,7 +21,9 @@ def main():
    row = gold()
 
    print('Finished with million iterations')
-   print(sum(row)+1)
+   answer = sum(row)+1
+   print(answer)
+   return answer
 
 if __name__ == '__main__':
    main()
