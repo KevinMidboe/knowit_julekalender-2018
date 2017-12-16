@@ -43,10 +43,8 @@ def getColor(value):
 
 def uploadToDropbox(progress):
    dbx = dropbox.Dropbox(os.environ.get('DROPBOX_ACCESS_TOKEN'))
-   print(dbx.users_get_current_account())
 
    response = dbx.files_upload(getPicture(), '/knowit/progress.svg', mode=WriteMode('overwrite', None))
-   print('response:', response)
 
 def main():
    failures, total = get_xml_test_results()
