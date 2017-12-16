@@ -23,8 +23,6 @@ def downloadImage(image_url):
    session = requests.Session()
    session.headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36"}
    localFilename = image_url.split('/')[-1].split("?")[0].split('-')[0].lower() + '.svg'
-   print(localFilename)
-   exit(0)
 
    r = session.get(image_url, stream=True, verify=False)
    with open(localFilename, 'wb') as f:
