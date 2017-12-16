@@ -3,7 +3,7 @@
 # @Author: KevinMidboe
 # @Date:   2017-12-04 16:40:56
 # @Last Modified by:   KevinMidboe
-# @Last Modified time: 2017-12-05 00:27:57
+# @Last Modified time: 2017-12-16 14:33:56
 
 import re, os
 from itertools import permutations
@@ -32,9 +32,6 @@ def bigram(word, n=2):
 			gram = gram[:-len(word[i:i+n])]
 	return ''.join(gram)
 
-def anagrams(word):
-	return [''.join(perm) for perm in permutations(word)]
-
 def has_number(string):
 	return bool(re.search(r'\d', string))
 
@@ -44,6 +41,7 @@ def main():
 	keys = set(inst.keys())
 	values = set(inst.values())
 	wordlist = get_wordlist()
+	answer = []
 
 	for word in wordlist:
 		if (has_number(word)): continue
@@ -56,20 +54,16 @@ def main():
 				# print(b)
 
 				if set(get_letter_instances(b).values()) == values:
-					print('match', word, n)
+					answer.append(str(n) + '-' + word)
 					# exit(0)
 					break
 
 				if (n > len(anagramed_gram) or len(b) > len(anagramed_gram)):
 					break
 				n+=1
-	exit(0)
-
-	snowflake = bigram('snowflake', 2)
-	mistletoe = bigram('mistletoe', 3)
-
-	print([snowflake, mistletoe])
-	# print(anagrams('snowflake'))
+	
+	print(answer)
+	return answer
 
 if __name__ == '__main__':
 	main()
