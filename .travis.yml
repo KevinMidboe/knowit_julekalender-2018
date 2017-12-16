@@ -4,6 +4,7 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - coverage run -m pytest
+  - pytest --junitxml=result.xml
+  - badge.py
 after_success:
   - coveralls
