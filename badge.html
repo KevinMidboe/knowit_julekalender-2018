@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+</body>
+<script>
+	var progress = (3/24)*100
+	var color = ''
+
+	if (progress >= 66)
+		color = 'green'
+	else if (progress < 66)
+		color = 'orange'
+	else
+		color = 'red'
+
+	var img = document.createElement("img");
+	img.src = `https://img.shields.io/badge/Progress-${progress}-${color}.svg`;
+	document.body.appendChild(img);
+</script>
+</html>
