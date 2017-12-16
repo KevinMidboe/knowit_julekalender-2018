@@ -1,9 +1,10 @@
 #!/usr/bin/env python3.6
 
+import os
 from pprint import pprint
 
 def readFile():
-    with open('./verda.txt', 'r') as f:
+    with open(os.path.dirname(__file__) + '/verda.txt', 'r') as f:
         read_data = f.read().splitlines()
     f.close()
     return read_data
@@ -15,8 +16,8 @@ def main():
         city = listview[3]
         country = listview[10]
         cord = [listview[12], listview[13]]
-        print('place: {}', city, 'in', country)
-        print('cord:', cord)
+        # print('place: {}', city, 'in', country)
+        # print('cord:', cord)
 
 if __name__=='__main__':
     main()
