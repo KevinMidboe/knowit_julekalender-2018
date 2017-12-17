@@ -1,2 +1,4 @@
+from luke_17.seksertriksing import main
+
 def test_answer():
-   assert False
+   assert main() == 153846
