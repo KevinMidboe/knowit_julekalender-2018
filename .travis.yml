@@ -1,10 +1,19 @@
-language: python
-python:
-  - 3.6
-install:
-  - pip install -r requirements.txt
-script:
-  - pytest --junitxml=result.xml
-  - python badge.py
-after_success:
-  - coveralls
+matrix:
+  include:
+    - language: ruby
+      rvm:
+        - 2.2
+        - jruby
+        - 2.0.0-p247
+      install: gem install zsteg
+
+    - language: python
+      python:
+        - 3.6
+      install:
+        - pip install -r requirements.txt
+      script:
+        - pytest --junitxml=result.xml
+        - python badge.py
+      after_success:
+        - coveralls
