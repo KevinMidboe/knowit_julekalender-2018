@@ -1,2 +1,4 @@
+from luke_10.julebord import main
+
 def test_answer():
-   assert False
+   assert main() == 953
