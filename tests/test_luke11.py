@@ -1,2 +1,4 @@
+from luke_11.mirptall import main
+
 def test_answer():
-   assert False
+   assert main() == 36
