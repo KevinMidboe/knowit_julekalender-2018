@@ -15,7 +15,6 @@ def main():
    boardImg = Image.new('RGB', (400, 300), (255,255,255))
    board = ImageDraw.Draw(boardImg)
    x, y = [0,0]
-   plotRectangle(x,y,board, 'green')
 
    for step, direction in path:
       if (direction == 'north'):
@@ -24,7 +23,6 @@ def main():
             board = plotRectangle(x, y, board)
       elif (direction == 'east'):
          for n in range(int(step)):
-            print(y)
             y += 1
             board = plotRectangle(x, y, board)
       elif (direction == 'south'):
