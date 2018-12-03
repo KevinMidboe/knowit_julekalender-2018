@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="24" name="pytest" skips="0" tests="24" time="0.514"><testcase classname="tests.test_luke01" file="tests/test_luke01.py" line="0" name="test_answer" time="0.00144219398499"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke01.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke02" file="tests/test_luke02.py" line="0" name="test_answer" time="0.00109601020813"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke02.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke03" file="tests/test_luke03.py" line="0" name="test_answer" time="0.00102782249451"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke03.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke04" file="tests/test_luke04.py" line="0" name="test_answer" time="0.00121712684631"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke04.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke05" file="tests/test_luke05.py" line="0" name="test_answer" time="0.00104904174805"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke05.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke06" file="tests/test_luke06.py" line="0" name="test_answer" time="0.000803232192993"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke06.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke07" file="tests/test_luke07.py" line="0" name="test_answer" time="0.000859022140503"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke07.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke08" file="tests/test_luke08.py" line="0" name="test_answer" time="0.000931978225708"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke08.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke09" file="tests/test_luke09.py" line="0" name="test_answer" time="0.000925064086914"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke09.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke10" file="tests/test_luke10.py" line="0" name="test_answer" time="0.00153303146362"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke10.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke11" file="tests/test_luke11.py" line="0" name="test_answer" time="0.00113201141357"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke11.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke12" file="tests/test_luke12.py" line="0" name="test_answer" time="0.000910997390747"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke12.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke13" file="tests/test_luke13.py" line="0" name="test_answer" time="0.000856876373291"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke13.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke14" file="tests/test_luke14.py" line="0" name="test_answer" time="0.000885248184204"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke14.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke15" file="tests/test_luke15.py" line="0" name="test_answer" time="0.00135970115662"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke15.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke16" file="tests/test_luke16.py" line="0" name="test_answer" time="0.000919103622437"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke16.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke17" file="tests/test_luke17.py" line="0" name="test_answer" time="0.000977993011475"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke17.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke18" file="tests/test_luke18.py" line="0" name="test_answer" time="0.00114750862122"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke18.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke19" file="tests/test_luke19.py" line="0" name="test_answer" time="0.00104975700378"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke19.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke20" file="tests/test_luke20.py" line="0" name="test_answer" time="0.00127768516541"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke20.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke21" file="tests/test_luke21.py" line="0" name="test_answer" time="0.00162792205811"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke21.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke22" file="tests/test_luke22.py" line="0" name="test_answer" time="0.00125622749329"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke22.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke23" file="tests/test_luke23.py" line="0" name="test_answer" time="0.00110816955566"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke23.py:2: AssertionError</failure></testcase><testcase classname="tests.test_luke24" file="tests/test_luke24.py" line="0" name="test_answer" time="0.00100684165955"><failure message="assert False">def test_answer():
+&gt;     assert False
+E     assert False
+
+tests/test_luke24.py:2: AssertionError</failure></testcase></testsuite>

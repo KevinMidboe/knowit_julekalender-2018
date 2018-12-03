@@ -49,7 +49,7 @@ def getColor(value):
 
 def uploadToDropbox(path):
    dbx = dropbox.Dropbox(os.environ.get('DROPBOX_ACCESS_TOKEN'))
-   response = dbx.files_upload(getPicture(path), '/knowit/' + path, mode=WriteMode('overwrite', None))
+   response = dbx.files_upload(getPicture(path), '/knowit-18/' + path, mode=WriteMode('overwrite', None))
 
 def main():
    failures, total = get_xml_test_results()

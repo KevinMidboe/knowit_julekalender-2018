@@ -1,6 +1,5 @@
 language: python
-python:
-  - 3.6
+python: 3.6
 before_install:
   - gem install zsteg
 install:
@@ -8,5 +7,4 @@ install:
 script:
   - pytest --junitxml=result.xml
   - python badge.py
-after_success:
-  - coveralls
+after_success: coveralls
