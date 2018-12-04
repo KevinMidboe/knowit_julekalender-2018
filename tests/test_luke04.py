@@ -1,6 +1,6 @@
 import os
 from PIL import Image
-from luke_04.LSB import main
+from luke_04.steganography import main
 
 path = os.path.dirname(__file__)
 
