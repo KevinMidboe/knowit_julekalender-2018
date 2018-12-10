@@ -5,4 +5,4 @@
 
 Desember er kommet og det betyr [knowit kodekalender](https://julekalender.knowit.no)! 
 
-Dette er mine forslag til løsninger på adventslukene. 
+Dette er mine løsninger på adventslukene. 
