@@ -14,6 +14,5 @@ Eksempel inndata:
   { "ch": "å", "hash": "f84a17c026567e049f929b5bcfc71169" } ]
 Eksempel output: ubåt
 
-Hvilken beskjed har Ola sendt med denne inputen?
-(input-hashchain.json)
+Hvilken beskjed har Ola sendt med [denne inputen](./input-hashchain.json)?
 
