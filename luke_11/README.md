@@ -1,4 +1,4 @@
-Sikk sakk
+## Sikk sakk
 
 Julenissen har gjemt gavene til hele Norge, men har glemt hvor han la de. Heldigvis har han notert hvor de ligger. Notatet består av et tall for distanse, samt bokstavene H, V, F og B for retningene høyre, venstre, frem og bak.
 
@@ -13,7 +13,7 @@ føre til denne løypen:
     9
 med sluttkoordinat [x,y] = [4,-1].
 
-Last ned notatet.
+Last ned [notatet](./input-crisscross.txt).
 
 Gavene ligger i enden av løypen. Hva er sluttkoordinatet hvor gavene ligger?
 
