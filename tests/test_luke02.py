@@ -1,2 +1,4 @@
+from luke_02.doubleRainbow import main as doubleRainbow
+
 def test_answer():
-  assert False
+  assert doubleRainbow() == 324
